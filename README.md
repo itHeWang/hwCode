@@ -50,6 +50,23 @@ Skill 是 OpenCode 的扩展机制，允许用户自定义 AI 行为模式、技
 
 ---
 
+### 3. find-skills（技能发现助手）
+
+帮助用户发现和安装来自开放技能生态系统的技能。
+
+**主要功能：**
+- 搜索技能（通过 `npx skills find`）
+- 验证技能质量（安装量、来源、GitHub stars）
+- 展示搜索结果并提供安装命令
+- 推荐热门技能（查阅 skills.sh 排行榜）
+
+**适用场景：**
+- 用户问 "how do I do X"
+- 用户问 "find a skill for X"
+- 用户对某个领域感兴趣但不确定是否有现成技能
+
+---
+
 ## 如何使用
 
 ### 安装 Skill
@@ -82,6 +99,8 @@ Skills 会根据描述自动触发。当任务匹配 skill 的描述时，AI 会
 skills/
 ├── my-chinese-assistant/
 │   └── SKILL.md
-└── skill-creator/
+├── skill-creator/
+│   └── SKILL.md
+└── find-skills/
     └── SKILL.md
 ```
